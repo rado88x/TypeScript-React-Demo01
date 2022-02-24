@@ -1,1 +1,3 @@
 npm init
+npm i -D webpack webpack-cli
+npm i -D html-webpack-plugin
