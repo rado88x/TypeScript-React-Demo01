@@ -16,3 +16,15 @@ npm i -D typescript ts-loader
 npm i -S react react-dom
 npm i -D @types/react @types/react-dom
 npm i -D @babel/preset-react
+
+//adding css loader and plugin
+npm i -D css-loader
+npm i -D mini-css-extract-plugin
+// to allow App.module.css imports make file "custom.d.ts" with that :
+
+declare module "*.css" {
+  const css: { [key: string]: string };
+  export default css;
+}
+
+npm i -D typescript-plugin-css-modules
