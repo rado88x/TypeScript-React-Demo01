@@ -1,3 +1,18 @@
 npm init
 npm i -D webpack webpack-cli
 npm i -D html-webpack-plugin
+npm i -D webpack-dev-server
+
+
+// babel loader - 11 min config
+npm i -D @babel/core @babel/preset-env @babel/preset-typescript
+npm i -D babel-loader
+
+
+//ts loader - first 6min config
+npm i -D typescript ts-loader
+
+//adding react
+npm i -S react react-dom
+npm i -D @types/react @types/react-dom
+npm i -D @babel/preset-react
