@@ -27,4 +27,14 @@ declare module "*.css" {
   export default css;
 }
 
+npm i svg-url-loader --save-dev
+
 npm i -D typescript-plugin-css-modules
+
+//SCG for pictures
+npm i -D @svgr/webpack
+and add it to custome.d.ts 
+declare module "*.svg" {
+  const ReactComponent :React.ComponentType<React.SVGAttributes<SVGElement>>;
+  export default ReactComponent;
+}
